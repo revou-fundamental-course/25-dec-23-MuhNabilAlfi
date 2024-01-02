@@ -3,10 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <br>
-    <br>
+    <header>
+        <h1>Kalkulator Segitiga</h1>
+        <h2>By Nabil</h2>
+    </header>
+    
+    <nav>
+        <a href="#luas-section" onclick="showSection('luas-section')">Luas Segitiga</a>
+        <a href="#keliling-section" onclick="showSection('keliling-section')">Keliling Segitiga</a>
+    </nav>
+
+    <main>
+        <section id="luas-section" class="active luas-keliling-section">
+            <img src="Asset/pic1.png">
+            <h3>Luas Segitiga</h3>
+            <label for="input-height">Tinggi :</label>
+            <br>
+            <input type="number" id="input-height" class="katik-input-height">
+            <br>
+            <label for="input-base">Alas :</label>
+            <br>
+            <input type="number" id="input-base" class="katik-input-base">
+
+            <div class="buttons">
+                <button onclick="hitungLuas()">Hitung</button>
+                <button onclick="resetForm()">Reset</button>
+            </div>
+
+            <p id="result-luas" class="result"></p>
+        </section>
+
+        <section id="keliling-section" class="keliling-section luas-keliling-section">
+            <img src="Asset/pic2.png">
+            <h3>Keliling Segitiga</h3>
+            <label for="input-side1">Sisi1 :</label><br>
+            <input type="number" id="input-side1" class="katik-input-side1">
+            <br>
+            <label for="input-side2">Sisi2 :</label><br>
+            <input type="number" id="input-side2" class="katik-input-side2">
+            <br>
+            <label for="input-side3">Sisi3 :</label><br>
+            <input type="number" id="input-side3" class="katik-input-side3">
+            <br>
+            <div class="buttons">
+                <button onclick="hitungKeliling()">Hitung</button>
+                <button onclick="resetForm()">Reset</button>
+            </div>
+
+            <p id="result-keliling" class="result"></p>
+        </section>
+    </main>
+
+    <script src="JS/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,85 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+nav {
+    background-color: #555;
+    padding: 16px;
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+main {
+    padding: 32px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+}
+/* INPUT SECTION */
+section {
+    padding: 32px;
+    display: none;
+    background-color: #ddd;
+}
+
+section.active {
+    display: block;
+}
+
+.luas-keliling-section {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.katik-input-height,
+.katik-input-base,
+.katik-input-side1,
+.katik-input-side2,
+.katik-input-side3 {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+button {
+    font-size: large;
+    margin: 5px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: red;
+    transform: translateY(5px);
+}
+
+button:active {
+    background-color: black;
+}
